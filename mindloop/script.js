@@ -14,7 +14,7 @@ function setApiKey(key){
 
 // ensure a demo key exists if nothing stored yet
 if(!getApiKey()){
-  setApiKey('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');
+  setApiKey('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');
 }
 
 async function callOpenRouter(messages){

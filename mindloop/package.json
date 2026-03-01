@@ -1,0 +1,12 @@
+{
+  "name": "mindloop",
+  "version": "1.0.0",
+  "description": "MindLoop small demo with integrated AI widget",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

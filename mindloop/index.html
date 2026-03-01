@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-box">
+    <h2>Smart AI Assistant 🤖</h2>
+
+    <div id="chat"></div>
+
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Ask anything...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+  </div>
+
+  <!-- Floating AI Widget (bottom-right) -->
+  <div id="ai-fab" class="ai-fab" title="Open MindLoop Assistant">💡</div>
+
+  <div id="ai-panel" class="ai-panel hidden">
+    <div class="ai-header">
+      <div>MindLoop Assistant</div>
+      <button id="ai-close" class="ai-close">✕</button>
+    </div>
+
+    <textarea id="ai-text" class="ai-text" placeholder="Paste text or type here..." rows="6"></textarea>
+
+    <div class="ai-image-upload">
+      <input type="file" id="ai-image" accept="image/*">
+      <input type="text" id="ai-image-desc" placeholder="Image description (optional)">
+      <div id="ai-image-preview" class="ai-image-preview"></div>
+    </div>
+
+    <div class="ai-actions">
+      <button id="ai-summary">Summary</button>
+      <button id="ai-quiz">Quiz</button>
+      <button id="ai-flashcards">Flashcards</button>
+      <button id="ai-fill">Fill Blanks</button>
+      <button id="ai-set-key" title="Set OpenAI API Key">Set API Key</button>
+    </div>
+
+    <div id="ai-output" class="ai-output"></div>
+  </div>
+
+  <script src="script.js"></script>
+  </body>
+  </html>
